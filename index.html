@@ -27,41 +27,276 @@
             <div class="cont-main">
                 <main>                    
                         <div class="contenedor-valores">
-            <!-------------------------------------------------------------------------EJEMPLO 1--------------------------------------> 
+    <!-------------------------------------------------------------------------EJEMPLO 1--------------------------------------> 
                                 <div class="valor">
-                                        <h3>Ejemplo 1</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                            Id cupiditate quas adipisci laboriosam consequatur consequuntur, 
-                                            quod hic quam reiciendis impedit.</p>
+                                    <h3>transition: ;</h3>  
+                                        <p>Permite que el paso del estado inical al estado final de un elemento o propiedad
+                                            del mismo, no se efectúe de manera brusca.                                     
+                                        </p>
                                                                 
                                 
-                                        <div class="figura uno">
+                                        <div class="figura1">
                 
                                         </div>                  
                                         <div class="nota">
                                             <h4>Ejemplo 1:</h4>
-                                            <p>msksiaoa aaakak</br>
-                                            alxon snsjs ajajkaao;
-                                            </p>
+                                            <p>(Así quedaría si no se aplica la propiedad transition)</br>
+                                                .figura1:hover{
+                                                   transform: translate(900px);}</p> 
+                                                
                                             
                                         </div>
                                 </div>
-                <!---------------------------------------------------------------------------------------------------------> 
+        <!-------------------------------------------------------------------------------EJEMPLO 2--------------------------> 
                                 <div class="valor">
-                                    <h3>Ejemplo 2</h3>
-                                                            
-                            
-                                    <div class="figura dos">
-                
+                                        <h3>transition-property: ;</h3>
+                                        <p>Con este valor se indican las propiedades que van a ser animadas:
+                                            all | none | propiedad CSS.
+                                        </p>     
+                                        <h3>transition-duration: ;</h3>
+                                        <p>Para que una transición funcione,hay que especificar la duración: s | ms
+                                        </p>                  
+                                
+                                        <div class="figura2">                
+                                        </div>                  
+                                        <div class="nota">
+                                            <h4>Ejemplo 2:</h4>
+                                            <p>
+                                                .figura2{
+                                                transition-property: transform;</br>
+                                                transition-duration: 6s; }
+                                            </p> 
+
+                                            <p> .figura2:hover{    
+                                                transform: translate(900px);
+                                            }                                        
+                                            </p>
+                                        
+                                        </div>
+                                </div>
+    <!----------------------------------------------------------------------------------EJEMPLO3------------------------>
+                                <div class="valor">
+                                        <h3>transition: ;</h3>                                                        
+
+                                        <div class="figura3">                
+                                        </div>                  
+                                        <div class="nota">
+                                            <h4>Ejemplo 3:</h4>
+                                            <p>
+                                                .figura3{
+                                                transition-property: border-radius, transform;</br>
+                                                transition-duration: 5s; }
+                                            </p> 
+
+                                            <p> .figura3:hover{  
+                                                border-radius: 50%;  </br>
+                                                transform: translate(900px);
+                                            }                                        
+                                            </p>
+                                        
+                                        </div>
+                                 </div>
+
+<!-------------------------------------------------------------------------EJEMPLO 4---------------------------->
+
+                                    <div class="valor">
+                                        <h3>transition: ;</h3>                                                        
+
+                                        <div class="figura4">                
+                                        </div>                  
+                                        <div class="nota">
+                                            <h4>Ejemplo 4:</h4>
+                                            <p>
+                                                .figura4{
+                                                transition-property: all;</br>
+                                                transition-duration: 5s; }
+                                            </p> 
+
+                                            <p> .figura4:hover{  
+                                                border-radius: 50%;  </br>
+                                                transform: translate(900px);</br>
+                                                background-color: yellow;
+                                            }                                        
+                                            </p>
+                                        
+                                        </div>
+                                    </div>
+
+
+<!-----------------------------------------------------------------EJEMPLO 5---------------------------------------->
+                                <div class="valor">
+                                    <h3>transition-timing-function: ;</h3>        
+                                    <p>Permite que el usuario vea la animación como progresiva a velocidad
+                                        constante o con cierta aceleración. Sus valores son: ease | linear |
+                                        ease-in | ease-out | ease-in-out | cubic-bezier.
+                                    </p>  
+                                    <h3>transition-timing-function: ease;</h3>  
+                                    <p>Inicio lento, transcurso rápido, final lento.</p>                                             
+
+                                    <div class="figura5">                
                                     </div>                  
                                     <div class="nota">
-                                        <h4>Ejemplo 2:</h4>
-                                        <p> amakma ankanak;</br>
-                                        aaklakk ananakna;
+                                        <h4>Ejemplo 5:</h4>
+                                        <p>
+                                            .figura5{
+                                            transition-property: all;</br>
+                                            transition-duration: 3s; </br>
+                                            transition-timing-function: ease;
+                                        }
+                                        </p> 
+
+                                        <p> .figura5:hover{  
+                                             transform: translate(900px);
+                                            
+                                        }                                        
                                         </p>
                                     
                                     </div>
                                 </div>
+
+<!-----------------------------------------------------------------EJEMPLO 6---------------------------------------->
+
+                                <div class="valor">
+                                    <h3>transition-timing-function: linear;</h3>     
+                                    <p>Inicio normal, transcurso normal, final normal. Movimiento uniforme.</p>   
+                                                                                   
+
+                                    <div class="figura6">                
+                                    </div>                  
+                                    <div class="nota">
+                                        <h4>Ejemplo 6:</h4>
+                                        <p>
+                                            .figura6{
+                                            transition-property: all;</br>
+                                            transition-duration: 3s; </br>
+                                            transition-timing-function: linear;
+                                        }
+                                        </p> 
+
+                                        <p> .figura6:hover{  
+                                            transform: translate(900px);
+                                            
+                                        }                                        
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+<!------------------------------------------------------------------------------FIGURA 7--------------------------->
+
+                                <div class="valor">
+                                    <h3>transition-timing-function: ease-in;</h3>     
+                                    <p>Inicio lento, transcurso normal, final normal.</p>   
+                                                                                
+
+                                    <div class="figura7">                
+                                    </div>                  
+                                    <div class="nota">
+                                        <h4>Ejemplo 7:</h4>
+                                        <p>
+                                            .figura7{
+                                            transition-property: all;</br>
+                                            transition-duration: 3s; </br>
+                                            transition-timing-function: ease-in;
+                                        }
+                                        </p> 
+
+                                        <p> .figura7:hover{  
+                                            transform: translate(900px);
+                                            
+                                        }                                        
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+<!------------------------------------------------------------------------------FIGURA 8--------------------------->
+
+
+                                <div class="valor">
+                                    <h3>transition-timing-function: ease-out;</h3>     
+                                    <p>Inicio normal, transcurso normal, final lento.</p>   
+                                                                                
+
+                                    <div class="figura8">                
+                                    </div>                  
+                                    <div class="nota">
+                                        <h4>Ejemplo 8:</h4>
+                                        <p>
+                                            .figura8{
+                                            transition-property: all;</br>
+                                            transition-duration: 3s; </br>
+                                            transition-timing-function: ease-out;
+                                        }
+                                        </p> 
+
+                                        <p> .figura8:hover{  
+                                            transform: translate(900px);
+                                            
+                                        }                                        
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+<!-----------------------------------------------------------------------------------FIGURA 9---------------------->
+
+
+                                <div class="valor">
+                                    <h3>transition-timing-function: ease-in-out;</h3>     
+                                    <p>Inicio lento, transcurso normal, final lento.</p>   
+                                                                                
+
+                                    <div class="figura9">                
+                                    </div>                  
+                                    <div class="nota">
+                                        <h4>Ejemplo 9:</h4>
+                                        <p>
+                                            .figura9{
+                                            transition-property: all;</br>
+                                            transition-duration: 3s; </br>
+                                            transition-timing-function: ease-in-out;
+                                        }
+                                        </p> 
+
+                                        <p> .figura9:hover{  
+                                            transform: translate(900px);
+                                            
+                                        }                                        
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+<!-------------------------------------------------------------------------------------EJEMPLO 10-------------------->
+
+                                <div class="valor">
+                                    <h3>transition-timing-function: cubic-bezier(A, B, C, D);</h3>     
+                                    <p>Es una función personalizada, en donde A: punto de partida, B: posición que debe ocupar
+                                        dentro del total una vez transcurrido el tiempo, C: tiempo final de la animación, D: posición final.
+                                    </p>   
+                                                                                
+
+                                    <div class="figura10">                
+                                    </div>                  
+                                    <div class="nota">
+                                        <h4>Ejemplo 10:</h4>
+                                        <p>
+                                            .figura10{
+                                            transition-property: all;</br>
+                                            transition-duration: 3s; </br>
+                                            transition: cubic-bezier(0.25, 0.1, 0,25, 1);
+                                        }
+                                        </p> 
+
+                                        <p> .figura10:hover{  
+                                            transform: translate(900px);
+                                            
+                                        }                                        
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+<!--------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------->
                         </div>
 
                 </main>
