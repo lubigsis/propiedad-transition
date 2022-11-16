@@ -40,7 +40,7 @@
                                         </div>                  
                                         <div class="nota">
                                             <h4>Ejemplo 1:</h4>
-                                            <p>(Así quedaría si no se aplica la propiedad transition)</br>
+                                            <p>(Así quedaría si <b>NO</b> se aplica la propiedad transition)</br>
                                                 .figura1:hover{
                                                    transform: translate(900px);}</p> 
                                                 
@@ -51,10 +51,10 @@
                                 <div class="valor">
                                         <h3>transition-property: ;</h3>
                                         <p>Con este valor se indican las propiedades que van a ser animadas:
-                                            all | none | propiedad CSS.
+                                          <b>all</b> | <b>none</b> | <b>propiedad CSS</b>.
                                         </p>     
                                         <h3>transition-duration: ;</h3>
-                                        <p>Para que una transición funcione,hay que especificar la duración: s | ms
+                                        <p>Para que una transición funcione,hay que especificar la duración. Unidades: <b>s</b> | <b>ms</b>
                                         </p>                  
                                 
                                         <div class="figura2">                
@@ -127,8 +127,8 @@
                                 <div class="valor">
                                     <h3>transition-timing-function: ;</h3>        
                                     <p>Permite que el usuario vea la animación como progresiva a velocidad
-                                        constante o con cierta aceleración. Sus valores son: ease | linear |
-                                        ease-in | ease-out | ease-in-out | cubic-bezier.
+                                        constante o con cierta aceleración. Sus valores son: <b>ease</b> | <b>linear</b> |
+                                        <b>ease-in</b> | <b>ease-out</b> | <b>ease-in-out</b> | <b>cubic-bezier</b>.
                                     </p>  
                                     <h3>transition-timing-function: ease;</h3>  
                                     <p>Inicio lento, transcurso rápido, final lento.</p>                                             
@@ -268,8 +268,8 @@
 
                                 <div class="valor">
                                     <h3>transition-timing-function: cubic-bezier(A, B, C, D);</h3>     
-                                    <p>Es una función personalizada, en donde A: punto de partida, B: posición que debe ocupar
-                                        dentro del total una vez transcurrido el tiempo, C: tiempo final de la animación, D: posición final.
+                                    <p>Es una función personalizada, en donde <b>A:</b> punto de partida, <b>B:</b> posición que debe ocupar
+                                        dentro del total una vez transcurrido el tiempo, <b>C:</b> tiempo final de la animación, <b>D:</b> posición final.
                                     </p>   
                                                                                 
 
@@ -293,7 +293,35 @@
                                     
                                     </div>
                                 </div>
-<!--------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------EJEMPLO 11------------------------>
+
+<div class="valor">
+    <h3>transition-delay: ;</h3>        
+    <p>Define cuánto tiempo tardará en que comience la transición. (El tiempo de espera para que ésta
+        se ejecute.). Unidades: <b>s</b> | <b>ms</b> </p>  
+                                                
+
+    <div class="figura11">                
+    </div>                  
+    <div class="nota">
+        <h4>Ejemplo 11:</h4>
+        <p>
+            .figura11{
+            transition-property: all;</br>
+            transition-duration: 3s; </br>
+            transition-timing-function: linear;</br>
+            transition-delay: 2s;
+        }
+        </p> 
+
+        <p> .figura11:hover{  
+             transform: translate(900px);
+            
+        }                                        
+        </p>
+    
+    </div>
+</div>
 <!--------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------->
 <!--------------------------------------------------------------------------------------------------------->
